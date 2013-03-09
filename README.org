@@ -1,0 +1,32 @@
+# clojure-javafx-hello
+
+A Clojure library designed to ... well, that part is up to you.
+
+A javafx "Hello World" program writtem in clojure.
+For the full java code, please see follwing link
+
+http://docs.oracle.com/javafx/2/get_started/hello_world.htm
+
+## Project Setup
+
+You must install maven2 and use following instruction to add
+javafx to your local maven repo.
+
+1. Find your javafx.jar, for example Gentoo/Funtoo Linux will install
+   javafx under /opt/oracle-jre-bin-1.7.0.17/lib/jfxrt.jar.
+
+2. Use follwoing command to add jfxrt.jar to your maven local repo.
+
+   mvn deploy:deploy-file -DgroupId=local.oracle -DartifactId=javafxrt \
+       -Dversion=2.2.0 -Dpackaging=jar \
+       -Dfile=/opt/oracle-jre-bin-1.7.0.17/lib/jfxrt.jar \
+       -Durl=file:/home/coldnew/.m2/repository
+
+   Note that you must use absolute path and replace your Home place to my
+   -Durl.
+
+## License
+
+Copyright © 2013 coldnew
+
+Distributed under the Eclipse Public License, the same as Clojure.

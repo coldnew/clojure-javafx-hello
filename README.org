@@ -3,8 +3,6 @@
 
 *  clojure-javafx-hello
 
-A Clojure library designed to ... well, that part is up to you.
-
 A javafx "Hello World" program writtem in clojure.
 For the full java code, please see follwing link
 

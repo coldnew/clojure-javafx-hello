@@ -1,4 +1,6 @@
 
+#+Style: <style> h1,h2,h3 {font-family: arial, helvetica, sans-serif} </style>
+
 *  clojure-javafx-hello
 
 A Clojure library designed to ... well, that part is up to you.

@@ -20,12 +20,11 @@ javafx to your local maven repo.
 
 2. Use follwoing command to add jfxrt.jar to your maven local repo.
 
-   #+begin_example
-     mvn deploy:deploy-file -DgroupId=local.oracle -DartifactId=javafxrt \
-         -Dversion=2.2.0 -Dpackaging=jar \
-         -Dfile=/opt/oracle-jre-bin-1.7.0.17/lib/jfxrt.jar \
-         -Durl=file:${HOME}/.m2/repository
-   #+end_example
+
+    : mvn deploy:deploy-file -DgroupId=local.oracle -DartifactId=javafxrt \
+    :     -Dversion=2.2.0 -Dpackaging=jar \
+    :     -Dfile=/opt/oracle-jre-bin-1.7.0.17/lib/jfxrt.jar \
+    :     -Durl=file:${HOME}/.m2/repository
 
    Note that you must use absolute path and replace ${HOME} your Home place.
 
